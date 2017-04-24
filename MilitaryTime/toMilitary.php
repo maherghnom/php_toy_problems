@@ -4,7 +4,9 @@ echo "ola<br>";
 function military_time($time){
 	$t=0;
 	$num= intval($time);
+	///intval === parseInt
 	if(strrpos($time, "pm") || strrpos($time, "am")){
+		///strpos === indexoff
 		$x =substr($time,0,strlen($time)-2);
 		///to get the 04:00  with out the pm or am ;
 		//echo $x;
